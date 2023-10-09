@@ -26,7 +26,7 @@
                 <h5 style="color: white" data-aos="fade-right" data-aos-duration="800">Genre</h5>
             </div>
             <?php for ($i = 0; $i < 7; $i++) { ?>
-                <div class="row">
+                <div class="row" data-aos="fade-up" data-aos-duration="1000">
                     <?php for ($j = 0; $j < 6; $j++) { ?>
                         <div class="col-4 col-lg-2 d-flex justify-content-center px-2 mb-3">
                             <div class="card border border-0 overlay" style="width: 100%;">
@@ -46,40 +46,31 @@
 
     <!-- Select page -->
     <div class="container d-flex justify-content-center mt-2 mb-4">
-        <nav>
+        <nav data-aos="fade-up" data-aos-duration="1000">
             <ul class="pagination">
-                <li class="page-item disabled rounded-3 mx-1 p-0">
-                    <a class="page-link"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                <li class="page-item rounded-3 mx-1 p-0">
+                    <a class="btn btn-secondary disabled" href="#" style="--bs-btn-padding-y: .4rem; --bs-btn-padding-x: .7rem; --bs-btn-font-size: .75rem;"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
                 </li>
                 <li class="page-item active rounded-3 mx-1 p-0" aria-current="page">
-                    <a class="page-link" href="#">1</a>
+                    <a class="btn btn-secondary" href="#" style="--bs-btn-padding-y: .4rem; --bs-btn-padding-x: .7rem; --bs-btn-font-size: .75rem;">1</a>
                 </li>
                 <li class="page-item rounded-3 mx-1 p-0">
-                    <a class="page-link" href="#">2</a>
+                    <a class="btn btn-secondary" href="#" style="--bs-btn-padding-y: .4rem; --bs-btn-padding-x: .7rem; --bs-btn-font-size: .75rem;">2</a>
                 </li>
                 <li class="page-item rounded-3 mx-1 p-0">
-                    <a class="page-link" href="#">3</a>
+                    <a class="btn btn-secondary" href="#" style="--bs-btn-padding-y: .4rem; --bs-btn-padding-x: .7rem; --bs-btn-font-size: .75rem;">3</a>
+                </li>
+                <li class="page-item disabled rounded-3 mx-1 p-0">
+                    <a class="btn btn-secondary disabled" href="#" style="--bs-btn-padding-y: .4rem; --bs-btn-padding-x: .7rem; --bs-btn-font-size: .75rem;">...</a>
                 </li>
                 <li class="page-item rounded-3 mx-1 p-0">
-                    <a class="page-link" href="#">...</a>
+                    <a class="btn btn-secondary" href="#" style="--bs-btn-padding-y: .4rem; --bs-btn-padding-x: .7rem; --bs-btn-font-size: .75rem;">10</a>
                 </li>
                 <li class="page-item rounded-3 mx-1 p-0">
-                    <a class="page-link" href="#">10</a>
-                </li>
-                <li class="page-item rounded-3 mx-1 p-0">
-                    <a class="page-link" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    <a class="btn btn-secondary" href="#" style="--bs-btn-padding-y: .4rem; --bs-btn-padding-x: .7rem; --bs-btn-font-size: .75rem;"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
                 </li>
             </ul>
         </nav>
-        <!-- <div>
-            <a href="#" class="btn btn-secondary"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
-            <a href="#" class="btn btn-secondary">1</a>
-            <a href="#" class="btn btn-secondary">2</a>
-            <a href="#" class="btn btn-secondary">3</a>
-            <a href="#" class="btn btn-secondary">...</a>
-            <a href="#" class="btn btn-secondary">10</a>
-            <a href="#" class="btn btn-secondary"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
-        </div> -->
     </div>
 
     <!-- Footer -->
