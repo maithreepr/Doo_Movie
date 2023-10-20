@@ -30,7 +30,7 @@ $movie_list = array("หนังมาใหม่", "อนิเมะ (ก�
         <h4 class="d-flex justify-content-center align-items-center my-5" style="color:whitesmoke">Header Title</h4>
         <div class="mb-4">
             <div class="d-flex justify-content-between mb-3">
-                <h5 style="color: white" data-aos="fade-right" data-aos-duration="800">หนัง</h5>
+                <h5 style="color: white" data-aos="fade-right" data-aos-duration="800">แนะนำหนัง</h5>
             </div>
             <div class="swiper suggestionSwiperAutoPlay pb-2" data-aos="fade-up" data-aos-duration="1000">
                 <div class="swiper-wrapper">
