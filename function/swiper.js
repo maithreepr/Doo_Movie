@@ -1,7 +1,5 @@
 const swiper_1 = new Swiper(".suggestionSwiper", {
-  slidesPerView: 2,
   spaceBetween: 15,
-  slidesPerGroup: 2,
   navigation: {
     hiddenClass: "swiper-button-hidden",
     nextEl: ".swiper-button-next",
@@ -27,7 +25,6 @@ const swiper_1 = new Swiper(".suggestionSwiper", {
 });
 
 const swiper_2 = new Swiper(".suggestionSwiperAutoPlay", {
-  slidesPerView: 2,
   spaceBetween: 15,
   autoplay: {
     delay: 5000,
