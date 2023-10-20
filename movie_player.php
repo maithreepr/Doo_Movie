@@ -48,12 +48,12 @@
                 <p class="fs-6 fw-bold my-1">เสียง : ไทย</p>
                 <p class="fs-6 fw-bold my-1">ประเภทหนัง :
                     <?php for ($i = 0; $i < 10; $i++) { ?>
-                        <a class="link-genre" style="color: whitesmoke;" href="#">Genre</a>
+                        <a class="link-genre" style="color: whitesmoke;" href="movie_list.php">Genre</a>
                     <?php } ?>
                 </p>
                 <p class="fs-6 fw-bold my-1">Tag :
                     <?php for ($i = 0; $i < 10; $i++) { ?>
-                        <a class="btn btn-secondary btn-sm my-1" href="#">Genre</a>
+                        <a class="btn btn-secondary btn-sm my-1" href="movie_list.php">Genre</a>
                     <?php } ?>
                 </p>
             </div>
