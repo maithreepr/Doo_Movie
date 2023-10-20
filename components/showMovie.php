@@ -14,7 +14,7 @@
                         <br><br>
                         <p class="d-none d-lg-block" style="color:whitesmoke;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos excepturi magni laudantium corrupti laboriosam perferendis nobis libero ipsam a quibusdam. Repellendus provident minima ad ipsum quis et nostrum! Voluptatum sapiente quia tenetur labore praesentium aliquam amet quasi sequi pariatur ratione.</p>
                         <div>
-                            <a href="#" class="btn btn-danger"><i class="fa fa-play fa-lg"></i> ดูหนัง</a>
+                            <a href="movie_player.php" class="btn btn-danger"><i class="fa fa-play fa-lg"></i> ดูหนัง</a>
                             <button class="btn btn-secondary"><i class="fa fa-plus fa-lg"></i> รายการของฉัน</button>
                         </div>';
                     </div>

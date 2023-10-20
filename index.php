@@ -28,26 +28,54 @@ $movie_list = array("หนังมาใหม่", "อนิเมะ (ก�
     <!-- Main Content -->
     <div class="container">
         <h4 class="d-flex justify-content-center align-items-center my-5" style="color:whitesmoke">Header Title</h4>
-        <!-- <div>
+        <div class="mb-4">
             <div class="d-flex justify-content-between mb-3">
                 <h5 style="color: white" data-aos="fade-right" data-aos-duration="800">หนัง</h5>
-                <a href="#" class="btn btn-dark btn-sm border border-1 border-danger" data-aos="fade-left" data-aos-duration="800"><span style="font-size:smaller">ดูทั้งหมด</span></a>
             </div>
-            <div class="row">
-                <swiper-container data-aos="fade-top" data-aos-duration="800" class="mySwiper mb-5" navigation="true" space-between="30" slides-per-view="6">
-                    <?php for ($i = 0; $i < 12; $i++) { ?>
-                        <swiper-slide>
-                            <div class="col-2 card" style="width: 100%;">
-                                <a href="#">
-                                    <img src="assets/Movie_Poster.jpg" class="card-img-top" alt="Thumbnail">
-                                    <p class="card-text">Crayon Shin chan Mononoke Ninja Chinpuden (2023) ชินจัง เดอะมูฟวี่ ตอน นินจาคาถาวายุอลเวง</p>
+            <div class="swiper suggestionSwiperAutoPlay pb-2" data-aos="fade-up" data-aos-duration="1000">
+                <div class="swiper-wrapper">
+                    <?php for ($j = 0; $j < 30; $j++) { ?>
+                        <div class="card border border-0 overlay swiper-slide" style="width: 100%;">
+                            <a href="movie_player.php">
+                                <img src="assets/Movie_Poster.jpg" class="card-img-top" alt="" style="width: 100%;">
+                                <div class="position-absolute bottom-0 start-50 translate-middle-x text-linear-gradient" style="width:100%; height:30%">
+                                    <p class="text-break text-center text-capitalize lh-sm text-overflow mt-0 mt-md-2 mt-lg-3 mb-0 px-2" style="color:whitesmoke;">Avengers: Infinity War (2018) อเวนเจอร์ส: มหาสงครามล้างจักรวาล</p>
+                                </div>
+                            </a>
+                        </div>
+                    <?php } ?>
+                </div>
+            </div>
+        </div>
+        <?php for ($i = 0; $i < 5; $i++) { ?>
+            <div class="mb-4">
+                <div class="d-flex justify-content-between mb-3">
+                    <h5 style="color: white" data-aos="fade-right" data-aos-duration="800">หนัง</h5>
+                    <a href="movie_list.php" class="btn btn-dark btn-sm border border-1 border-danger" data-aos="fade-left" data-aos-duration="800"><span style="font-size:smaller">ดูทั้งหมด</span></a>
+                </div>
+                <div class="swiper suggestionSwiper pb-2" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="swiper-wrapper">
+                        <?php for ($j = 0; $j < 30; $j++) { ?>
+                            <div class="card border border-0 overlay swiper-slide" style="width: 100%;">
+                                <a href="movie_player.php">
+                                    <img src="assets/Movie_Poster.jpg" class="card-img-top" alt="" style="width: 100%;">
+                                    <div class="position-absolute bottom-0 start-50 translate-middle-x text-linear-gradient" style="width:100%; height:30%">
+                                        <p class="text-break text-center text-capitalize lh-sm text-overflow mt-0 mt-md-2 mt-lg-3 mb-0 px-2" style="color:whitesmoke;">Avengers: Infinity War (2018) อเวนเจอร์ส: มหาสงครามล้างจักรวาล</p>
+                                    </div>
                                 </a>
                             </div>
-                        </swiper-slide>
-                    <?php } ?>
-                </swiper-container>
+                        <?php } ?>
+                    </div>
+                    <div class="swiper-button-next text-light d-none d-lg-inline">
+                        <i class="fa fa-chevron-right position-absolute top-50 start-50 translate-middle" aria-hidden="true"></i>
+                    </div>
+                    <div class="swiper-button-prev text-light d-none d-lg-inline">
+                        <i class="fa fa-chevron-left position-absolute top-50 start-50 translate-middle" aria-hidden="true"></i>
+                    </div>
+                    <div class="swiper-scrollbar bg-secondary position-absolute top-100 start-50 translate-middle d-block d-lg-none"></div>
+                </div>
             </div>
-        </div> -->
+        <?php } ?>
     </div>
 
     <!-- Ads -->
@@ -82,7 +110,7 @@ $movie_list = array("หนังมาใหม่", "อนิเมะ (ก�
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <script>
         AOS.init();
@@ -90,35 +118,9 @@ $movie_list = array("หนังมาใหม่", "อนิเมะ (ก�
 
     <!-- Function -->
     <script src="function/navBarScroll.js"></script>
-    <!-- <script src="function/searchBar.js"></script> -->
-    <script>
-        const toggleButton = document.getElementById("toggle-button");
-        const closeButton = document.getElementById("close-button");
-        const searchBar = document.getElementById("search-bar");
-        const searchBg = document.getElementById("search-bg");
-        const body = document.body;
+    <script src="function/searchBar.js"></script>
+    <script src="function/swiper.js"></script>
 
-        toggleButton.addEventListener("click", () => {
-            toggleButton.style.display = "none";
-            closeButton.style.display = "block";
-            searchBar.style.display = "block";
-            body.style.overflow = "hidden";
-        });
-
-        closeButton.addEventListener("click", () => {
-            toggleButton.style.display = "block";
-            closeButton.style.display = "none";
-            searchBar.style.display = "none";
-            body.style.overflow = "auto";
-        });
-
-        searchBg.addEventListener("click", () => {
-            toggleButton.style.display = "block";
-            closeButton.style.display = "none";
-            searchBar.style.display = "none";
-            body.style.overflow = "auto";
-        });
-    </script>
 </body>
 
 </html>

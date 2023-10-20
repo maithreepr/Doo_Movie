@@ -30,10 +30,10 @@
                     <?php for ($j = 0; $j < 6; $j++) { ?>
                         <div class="col-4 col-lg-2 d-flex justify-content-center px-2 mb-3">
                             <div class="card border border-0 overlay" style="width: 100%;">
-                                <a href="#">
+                                <a href="movie_player.php">
                                     <img src="assets/Movie_Poster.jpg" class="card-img-top" alt="">
                                     <div class="position-absolute bottom-0 start-50 translate-middle-x text-linear-gradient" style="width:100%; height:30%">
-                                        <p class="text-break text-center text-capitalize lh-sm text-overflow mb-0 px-2" style="color:whitesmoke;">Avengers: Infinity War (2018) อเวนเจอร์ส: มหาสงครามล้างจักรวาล</p>
+                                        <p class="text-break text-center text-capitalize lh-sm text-overflow mt-1 mt-md-3 mt-lg-2 mb-0 px-2" style="color:whitesmoke;">Avengers: Infinity War (2018) อเวนเจอร์ส: มหาสงครามล้างจักรวาล</p>
                                     </div>
                                 </a>
                             </div>
@@ -91,35 +91,7 @@
 
     <!-- Function -->
     <script src="function/navBarScroll.js"></script>
-    <!-- <script src="function/searchBar.js"></script> -->
-    <script>
-        const toggleButton = document.getElementById("toggle-button");
-        const closeButton = document.getElementById("close-button");
-        const searchBar = document.getElementById("search-bar");
-        const searchBg = document.getElementById("search-bg");
-        const body = document.body;
-
-        toggleButton.addEventListener("click", () => {
-            toggleButton.style.display = "none";
-            closeButton.style.display = "block";
-            searchBar.style.display = "block";
-            body.style.overflow = "hidden";
-        });
-
-        closeButton.addEventListener("click", () => {
-            toggleButton.style.display = "block";
-            closeButton.style.display = "none";
-            searchBar.style.display = "none";
-            body.style.overflow = "auto";
-        });
-
-        searchBg.addEventListener("click", () => {
-            toggleButton.style.display = "block";
-            closeButton.style.display = "none";
-            searchBar.style.display = "none";
-            body.style.overflow = "auto";
-        });
-    </script>
+    <script src="function/searchBar.js"></script>
 
 </body>
 

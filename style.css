@@ -116,7 +116,8 @@ body {
 /* Text overflow in movie list */
 
 .text-linear-gradient {
-  background: rgb(25, 25, 25);
+  /* background: rgb(25, 25, 25); */
+  background: red;
   background: linear-gradient(
     180deg,
     rgba(25, 25, 25, 0.3) 0%,
@@ -176,4 +177,33 @@ body {
   .text-linear-gradient {
     opacity: 1;
   }
+}
+
+/* Footer */
+.footer-text-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Swiper */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "";
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  font-size: 2rem;
+  top: 0;
+  height: 100%;
+  margin: 0;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
 }
