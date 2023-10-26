@@ -29,17 +29,17 @@ $movie_list = array("หนังมาใหม่", "อนิเมะ (ก�
     <div class="container">
         <h4 class="d-flex justify-content-center align-items-center my-5" style="color:whitesmoke">Header Title</h4>
         <div class="mb-4">
-            <div class="d-flex justify-content-between mb-3">
+            <div class="mb-3">
                 <h5 style="color: white" data-aos="fade-right" data-aos-duration="800">แนะนำหนัง</h5>
             </div>
             <div class="swiper suggestionSwiperAutoPlay pb-2" data-aos="fade-up" data-aos-duration="1000">
                 <div class="swiper-wrapper">
                     <?php for ($j = 0; $j < 30; $j++) { ?>
                         <div class="card border border-0 overlay swiper-slide" style="width: 100%;">
-                            <a href="movie_player.php">
+                            <a href="movie_player.php?movie_id=<?= $j + 1 ?>">
                                 <img src="assets/Movie_Poster.jpg" class="card-img-top" alt="" style="width: 100%;">
                                 <div class="position-absolute bottom-0 start-50 translate-middle-x text-linear-gradient" style="width:100%; height:30%">
-                                    <p class="text-break text-center text-capitalize lh-sm text-overflow mt-0 mt-md-2 mt-lg-3 mb-0 px-2" style="color:whitesmoke;">Avengers: Infinity War (2018) อเวนเจอร์ส: มหาสงครามล้างจักรวาล</p>
+                                    <p class="text-break text-center text-capitalize lh-sm text-overflow mt-0 mt-md-1 mt-lg-3 mb-0 px-2" style="color:whitesmoke;">Avengers: Infinity War (2018) อเวนเจอร์ส: มหาสงครามล้างจักรวาล</p>
                                 </div>
                             </a>
                         </div>
@@ -49,15 +49,15 @@ $movie_list = array("หนังมาใหม่", "อนิเมะ (ก�
         </div>
         <?php for ($i = 0; $i < 5; $i++) { ?>
             <div class="mb-4">
-                <div class="d-flex justify-content-between mb-3">
-                    <h5 style="color: white" data-aos="fade-right" data-aos-duration="800">หนัง</h5>
-                    <a href="movie_list.php" class="btn btn-dark btn-sm border border-1 border-danger" data-aos="fade-left" data-aos-duration="800"><span style="font-size:smaller">ดูทั้งหมด</span></a>
+                <div class="position-relative mb-3">
+                    <h5 class="d-inline" style="color: white" data-aos="fade-right" data-aos-duration="800">หนัง</h5>
+                    <a href="movie_list.php?genra_id=<?= $i + 1 ?>" class="btn btn-dark btn-sm border border-1 border-danger position-absolute top-50 end-0 translate-middle-y" data-aos="fade-left" data-aos-duration="800"><span style="font-size:smaller">ดูทั้งหมด</span></a>
                 </div>
                 <div class="swiper suggestionSwiper pb-2" data-aos="fade-up" data-aos-duration="1000">
                     <div class="swiper-wrapper">
                         <?php for ($j = 0; $j < 30; $j++) { ?>
                             <div class="card border border-0 overlay swiper-slide" style="width: 100%;">
-                                <a href="movie_player.php">
+                                <a href="movie_player.php?movie_id=<?= $j + 1 ?>">
                                     <img src="assets/Movie_Poster.jpg" class="card-img-top" alt="" style="width: 100%;">
                                     <div class="position-absolute bottom-0 start-50 translate-middle-x text-linear-gradient" style="width:100%; height:30%">
                                         <p class="text-break text-center text-capitalize lh-sm text-overflow mt-0 mt-md-2 mt-lg-3 mb-0 px-2" style="color:whitesmoke;">Avengers: Infinity War (2018) อเวนเจอร์ส: มหาสงครามล้างจักรวาล</p>
@@ -96,7 +96,6 @@ $movie_list = array("หนังมาใหม่", "อนิเมะ (ก�
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <!-- Footer -->
