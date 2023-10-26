@@ -25,27 +25,25 @@
             <div class="d-flex justify-content-start mt-4 mb-3">
                 <h5 style="color: white" data-aos="fade-right" data-aos-duration="800">Genre</h5>
             </div>
-            <?php for ($i = 0; $i < 7; $i++) { ?>
-                <div class="row" data-aos="fade-up" data-aos-duration="1000">
-                    <?php for ($j = 0; $j < 6; $j++) { ?>
-                        <div class="col-4 col-lg-2 d-flex justify-content-center px-2 mb-3">
-                            <div class="card border border-0 overlay" style="width: 100%;">
-                                <a href="movie_player.php">
-                                    <img src="assets/Movie_Poster.jpg" class="card-img-top" alt="">
-                                    <div class="position-absolute bottom-0 start-50 translate-middle-x text-linear-gradient" style="width:100%; height:30%">
-                                        <p class="text-break text-center text-capitalize lh-sm text-overflow mt-1 mt-md-3 mt-lg-2 mb-0 px-2" style="color:whitesmoke;">Avengers: Infinity War (2018) อเวนเจอร์ส: มหาสงครามล้างจักรวาล</p>
-                                    </div>
-                                </a>
-                            </div>
+            <div class="row" data-aos="fade-up" data-aos-duration="1000">
+                <?php for ($i = 0; $i < 42; $i++) { ?>
+                    <div class="col-4 col-lg-2 d-flex justify-content-center px-2 mb-3">
+                        <div class="card border border-0 overlay" style="width: 100%;">
+                            <a href="movie_player.php?movie_id=<?= $i + 1 ?>">
+                                <img src="assets/Movie_Poster.jpg" class="card-img-top" alt="">
+                                <div class="position-absolute bottom-0 start-50 translate-middle-x text-linear-gradient" style="width:100%; height:30%">
+                                    <p class="text-break text-center text-capitalize lh-sm text-overflow mt-1 mt-md-3 mt-lg-2 mb-0 px-2" style="color:whitesmoke;">Avengers: Infinity War (2018) อเวนเจอร์ส: มหาสงครามล้างจักรวาล</p>
+                                </div>
+                            </a>
                         </div>
-                    <?php } ?>
-                </div>
-            <?php } ?>
+                    </div>
+                <?php } ?>
+            </div>
         </div>
     </div>
 
     <!-- Select page -->
-    <div class="container d-flex justify-content-center mt-2 mb-4">
+    <!-- <div class="container d-flex justify-content-center mt-2 mb-4">
         <nav data-aos="fade-up" data-aos-duration="1000">
             <ul class="pagination">
                 <li class="page-item rounded-3 mx-1 p-0">
@@ -71,7 +69,7 @@
                 </li>
             </ul>
         </nav>
-    </div>
+    </div> -->
 
     <!-- Footer -->
     <?php include 'components/footer.php'; ?>
