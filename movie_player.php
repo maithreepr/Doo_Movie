@@ -48,12 +48,12 @@
                 <p class="fs-6 fw-bold my-1">เสียง : ไทย</p>
                 <p class="fs-6 fw-bold my-1">ประเภทหนัง :
                     <?php for ($i = 0; $i < 10; $i++) { ?>
-                        <a class="link-genre" style="color: whitesmoke;" href="movie_list.php">Genre</a>
+                        <a class="link-genre" style="color: whitesmoke;" href="movie_list.php?genra_id=<?= $i + 1 ?>">Genre</a>
                     <?php } ?>
                 </p>
                 <p class="fs-6 fw-bold my-1">Tag :
                     <?php for ($i = 0; $i < 10; $i++) { ?>
-                        <a class="btn btn-secondary btn-sm my-1" href="movie_list.php">Genre</a>
+                        <a class="btn btn-secondary btn-sm my-1" href="movie_list.php?genra_id=<?= $i + 1 ?>">Genre</a>
                     <?php } ?>
                 </p>
             </div>
@@ -73,7 +73,7 @@
             <div class="swiper-wrapper">
                 <?php for ($i = 0; $i < 30; $i++) { ?>
                     <div class="card border border-0 overlay swiper-slide" style="width: 100%;">
-                        <a href="movie_player.php">
+                        <a href="movie_player.php?movie_id=<?= $i + 1 ?>">
                             <img src="assets/Movie_Poster.jpg" class="card-img-top" alt="" style="width: 100%;">
                             <div class="position-absolute bottom-0 start-50 translate-middle-x text-linear-gradient" style="width:100%; height:30%">
                                 <p class="text-break text-center text-capitalize lh-sm text-overflow mt-0 mt-md-2 mt-lg-3 mb-0 px-2" style="color:whitesmoke;">Avengers: Infinity War (2018) อเวนเจอร์ส: มหาสงครามล้างจักรวาล</p>

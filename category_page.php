@@ -23,7 +23,7 @@
         <div data-aos="fade-right" data-aos-duration="1000" class="row my-4">
             <?php for ($i = 0; $i < 38; $i++) { ?>
                 <div class="col-6 col-md-4">
-                    <a href="movie_list.php" class="btn btn-secondary py-3 my-2 border border-0" style="width: 100%;background: rgba(49, 48, 54, 1);" onmouseover="this.style.backgroundColor='#dc3444'" onmouseout="this.style.backgroundColor='rgba(49, 48, 54, 1)'">Genre</a>
+                    <a href="movie_list.php?genra_id=<?= $i + 1 ?>" class="btn btn-secondary py-3 my-2 border border-0" style="width: 100%;background: rgba(49, 48, 54, 1);" onmouseover="this.style.backgroundColor='#dc3444'" onmouseout="this.style.backgroundColor='rgba(49, 48, 54, 1)'">Genre</a>
                 </div>
             <?php } ?>
         </div>

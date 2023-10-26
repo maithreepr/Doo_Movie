@@ -14,13 +14,13 @@
                     <a class="nav-link" href="category_page.php">Genre</a>
                 </li>
                 <li class="nav-item mx-1">
-                    <a class="nav-link" href="movie_list.php">Horror</a>
+                    <a class="nav-link" href="movie_list.php?genra_id=1">Horror</a>
                 </li>
                 <li class="nav-item mx-1">
-                    <a class="nav-link" href="movie_list.php">Action</a>
+                    <a class="nav-link" href="movie_list.php?genra_id=2">Action</a>
                 </li>
                 <li class="nav-item mx-1">
-                    <a class="nav-link" href="movie_list.php">Drama</a>
+                    <a class="nav-link" href="movie_list.php?genra_id=3">Drama</a>
                 </li>
             </ul>
         </div>
