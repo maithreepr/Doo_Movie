@@ -14,9 +14,7 @@
 
 body {
   background: rgb(25, 25, 25);
-  /* background: black; */
-  /* padding-top: 56px; */
-  /* background: red; */
+  overflow-x: hidden;
 }
 
 @media (max-width: 1023px) {
