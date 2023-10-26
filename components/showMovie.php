@@ -16,13 +16,13 @@
                         <div>
                             <a href="movie_player.php?movie_id=<?= $i + 1 ?>" class="btn btn-danger"><i class="fa fa-play fa-lg"></i> ดูหนัง</a>
                             <button class="btn btn-secondary"><i class="fa fa-plus fa-lg"></i> รายการของฉัน</button>
-                        </div>';
+                        </div>
                     </div>
                 </div>
             </div>
             <!-- img size 2859 × 1308 pixels for md lg xl xxl size -->
             <?php echo '<img src="assets/Poster_' . $i + 1 . '.jpg" class="d-block w-100" alt="Poster_1">'; ?>
-    </div>';
+    </div>
 <?php } ?>
 </div>
 </div>
