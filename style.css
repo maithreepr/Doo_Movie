@@ -95,7 +95,7 @@ body {
   left: 0;
   right: 0;
   z-index: 999;
-  padding-top: 60px;
+  padding-top: 100px;
 }
 
 .form-search-bg {
@@ -204,4 +204,65 @@ body {
 
 .swiper-button-prev {
   left: 0;
+}
+
+/* Movie trailers */
+
+.movie-trailers {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.movie-trailers-bg {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.movie-trailers-content {
+  position: relative;
+  background: rgb(56, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(56, 0, 0, 1) 0%,
+    rgba(25, 25, 25, 1) 20%
+  );
+  color: whitesmoke;
+}
+
+@media (max-width: 2560px) {
+  .movie-trailers-content {
+    width: 1000px;
+    height: calc(100vh - 70px);
+    border: 2px solid rgba(108, 117, 125, 1);
+    border-radius: 5px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .movie-trailers-content {
+    width: 1000px;
+    height: calc(100vh - 67px);
+    border: none;
+  }
+}
+
+/* Movie player */
+@media (min-width: 768px) {
+  .movie-player-height {
+    height: 600px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .movie-player-height {
+    height: 630px;
+  }
 }

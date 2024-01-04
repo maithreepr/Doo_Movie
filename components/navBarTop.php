@@ -24,7 +24,9 @@
                 </li>
             </ul>
         </div>
-        <button data-aos="fade-left" data-aos-duration="1000" class="btn btn-sm btn-secondary" id="toggle-button" style="display: block;"><i class="fa fa-search fa-lg"></i></button>
-        <button data-aos="fade-down" data-aos-duration="1000" id="close-button" class="btn border border-0" style="color: #dc3444; display: none;"><i class="fa fa-times" aria-hidden="true"></i></button>
+        <button data-aos="fade-left" data-aos-duration="1000" class="btn btn-sm btn-secondary" id="toggle-button"
+            style="display: block;"><i class="fa fa-search fa-lg"></i></button>
+        <button data-aos="fade-down" data-aos-duration="1000" id="close-button" class="btn border border-0"
+            style="color: #dc3444; display: none;"><i class="fa fa-times" aria-hidden="true"></i></button>
     </div>
 </nav>

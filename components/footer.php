@@ -3,7 +3,8 @@
         <div class="row justify-content-center px-5">
             <?php for ($i = 0; $i < 8; $i++) { ?>
                 <div class="col-4 col-md-3 col-lg-2 mb-2 p-0">
-                    <a href="movie_list.php?genra_id=<?= $i + 1 ?>" class="btn btn-secondary btn-sm rounded-pill" style="width: 95%;">
+                    <a href="movie_list.php?genra_id=<?= $i + 1 ?>" class="btn btn-secondary btn-sm rounded-pill"
+                        style="width: 95%;">
                         <p class="footer-text-overflow m-0">Genre</p>
                     </a>
                 </div>
